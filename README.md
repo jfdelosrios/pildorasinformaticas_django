@@ -1,5 +1,6 @@
 # pildorasinformaticas_django
 Solucionario del curso https://www.youtube.com/playlist?list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB
+
 dirección en github https://github.com/jfdelosrios/pildorasinformaticas_django.git
 
 

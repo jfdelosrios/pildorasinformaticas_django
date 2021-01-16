@@ -18,6 +18,8 @@ def saludo(request): # primera vista
 
     #apellido="Díaz"
 
+    temasDelCurso=["Plantillas", "Modelos", "Formularios", "Vistas", "Despliegue"]
+
     ahora=datetime.datetime.now()
 
     doc_externo=open("C:/Users/DELL/Desktop/pildorasinformaticas_django/ProyectosDjango/Proyecto1/Proyecto1/plantillas/miplantilla.html")
@@ -29,7 +31,8 @@ def saludo(request): # primera vista
     dic={
         "nombre_persona":p1.nombre,
         "apellido_persona":p1.apellido,
-        "momento_actual":ahora
+        "momento_actual":ahora,
+        "temas":temasDelCurso
         }
 
     ctx=Context(dic)

@@ -48,4 +48,5 @@ video 2:
 - Cambió comando "manage.py help" por "python manage.py"
 
 
-# por donde voy? 2
+# por donde voy?
+comienzo el 8

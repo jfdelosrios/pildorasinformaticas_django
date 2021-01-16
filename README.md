@@ -6,12 +6,14 @@ dirección en github https://github.com/jfdelosrios/pildorasinformaticas_django.
 Este repositorio requiere crear el ambiente cuando es clonado. Correr script.sh para generar el ambiente.
 ./script.sh
 
-
 # para correr servidor
 python manage.py runserver
 
 # para enviar
 git push origin master
+
+# para salir de (END)
+presiona tecla "q"
 
 # para clonar
 git clone xxx

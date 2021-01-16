@@ -3,6 +3,9 @@ Solucionario del curso https://www.youtube.com/playlist?list=PLU8oAlHdN5BmfvwxFO
 
 dirección en github https://github.com/jfdelosrios/pildorasinformaticas_django.git
 
+Este repositorio requiere crear el ambiente cuando es clonado. Correr script.sh para generar el ambiente.
+./script.sh
+
 
 # para correr servidor
 python manage.py runserver
@@ -13,9 +16,6 @@ git push origin master
 # para clonar
 git clone xxx
 (donde xxx es la url del proyecto)
-
-
-Este repositorio requiere crear el ambiente cuando es clonado. Correr script.sh para generar el ambiente.
 
 # correr un script desde git bash, 
 https://stackoverflow.com/questions/36401147/running-sh-scripts-in-git-bash
@@ -39,5 +39,11 @@ python manage.py shell
 //--------------------------
 
 # Dudas
+
+# comentatios
+
 video 2:
-- No esta funcionando comando "manage.py help"
+- Cambió comando "manage.py help" por "python manage.py"
+
+
+# por donde voy? 2

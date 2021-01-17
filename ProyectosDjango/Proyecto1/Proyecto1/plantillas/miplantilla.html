@@ -3,14 +3,25 @@
     <h2 style="color:red">
     Hola alumnos esta estamos viendo nuestra primera plantilla
     </h2>
-    <p>El nombre del profesor es: {{nombre_persona.upper}} {{apellido_persona.upper}}</p>
-    <p>Estamos viendo el tema de las plantillas a d&iacute;a: {{momento_actual.day}} / {{momento_actual.month}} /{{momento_actual.year}}</p>
+
+    {% comment %} NO TEMAS DISEÑADOR! 
+        IGNORA ESTA PARTE
+    {% endcomment %}
+
+    {% if nombre_persona == ' Profesor Juan' %}
+        <p>El curso lo imparte el profesor titular</p>
+    {% else %}
+        <p>El curso lo imparte el profesor suplente</p>
+    {% endif %}
+
+    <p>El nombre del profesor es: {{nombre_persona|lower}} {{apellido_persona.upper}}</p>
+    <p>Estamos viendo el tema de las plantillas a d&iacute;a: {{momento_actual.day}} / {{momento_actual.month}} / {{momento_actual.year}}</p>
     <p><strong>Temas del curso:</strong></p>
     <p>
         <ul>
             {% if temas %}
                 {% for elTema in temas%}
-                    <li>{{elTema}}</li>
+                    <li>{{elTema|first|lower}}</li>
                 {% endfor %}
             {% else %}
                 <p>No hay elementos que mostrar</p>

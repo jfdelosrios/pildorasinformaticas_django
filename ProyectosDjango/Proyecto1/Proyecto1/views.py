@@ -2,6 +2,7 @@ from django.http import HttpResponse
 import datetime
 from django.template import Template, Context
 from django.template.loader import get_template
+from django.shortcuts import render
 
 class Persona(object):
 
@@ -29,7 +30,7 @@ def saludo(request): # primera vista
 
     #doc_externo.close()
 
-    doc_externo=get_template('miplantilla.html')
+    #doc_externo=get_template('miplantilla.html')
 
     dic={
         "nombre_persona":p1.nombre,
@@ -40,9 +41,9 @@ def saludo(request): # primera vista
 
     #ctx=Context(dic)
 
-    documento=doc_externo.render(dic)
+    #documento=doc_externo.render(dic)
 
-    return HttpResponse(documento)
+    return render(request,"miplantilla.html", dic)
 
 def despedida(request):
 

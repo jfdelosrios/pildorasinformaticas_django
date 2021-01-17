@@ -45,6 +45,22 @@ def saludo(request): # primera vista
 
     return render(request,"miplantilla.html", dic)
 
+def cursoC(request):
+
+    fecha_actual=datetime.datetime.now()
+
+    return render(request,"CursoC.html",{"dameFecha":fecha_actual})
+
+
+
+def cursoCss(request):
+
+    fecha_actual=datetime.datetime.now()
+
+    return render(request,"CursoCss.html",{"dameFecha":fecha_actual})
+
+
+
 def despedida(request):
 
     return HttpResponse("Hasta luego alumnos de Django")

@@ -3,5 +3,7 @@
 python -m venv .env # Crea ambiente en path (carpeta) .env
 source .env/Scripts/activate # activa el ambiente
 pip install -r requirements.txt # Lee el archivo requirements.txt e instala los modulos que esten escritos en este
-pip freeze # muestra en consola los modulos que tiene instalado el ambiente
-deactivate # desactiva el ambiente
+cd ProyectosDjango/TiendaOnline/ # entra al proyecto actual
+python manage.py makemigrations
+python manage.py migrate
+./manage.py shell < llenarBaseDatos.py # llenar base de datos

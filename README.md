@@ -31,11 +31,16 @@ deactivate
 # correr servidor
 python manage.py runserver
 
+python manage.py shell
+
+
+# actualizar base de datos
+
+primero
 python manage.py makemigrations
 
+segundo
 python manage.py migrate
-
-python manage.py shell
 
 
 //--------------------------
@@ -48,5 +53,7 @@ video 2:
 - Cambió comando "manage.py help" por "python manage.py"
 
 
-# exportar e importar base de datos postgres
- https://www.youtube.com/watch?v=icEvkyIXqug
+# ejecutar script para llenar la base de datos
+ https://stackoverflow.com/questions/16853649/how-to-execute-a-python-script-from-the-django-shell
+
+ Recuerde tener creada la base de datos con el mismo nombre registrada en el diccionario DATABASES de settings.py

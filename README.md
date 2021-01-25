@@ -48,5 +48,5 @@ video 2:
 - Cambió comando "manage.py help" por "python manage.py"
 
 
-# por donde voy?
-comienzo el 8
+# exportar e importar base de datos postgres
+ https://www.youtube.com/watch?v=icEvkyIXqug

@@ -52,7 +52,6 @@ python manage.py migrate
 video 2:
 - Cambió comando "manage.py help" por "python manage.py"
 
-
 # ejecutar script para llenar la base de datos
  https://stackoverflow.com/questions/16853649/how-to-execute-a-python-script-from-the-django-shell
 

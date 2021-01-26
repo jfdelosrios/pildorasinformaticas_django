@@ -8,4 +8,5 @@ python manage.py makemigrations
 python manage.py migrate
 ./manage.py shell < llenarBaseDatos.py # llenar base de datos
 ./manage.py shell < llenaUsuarios.py # llenar base de datos
+./manage.py shell < video17.py
 deactivate

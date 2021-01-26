@@ -7,3 +7,4 @@ cd ProyectosDjango/TiendaOnline/ # entra al proyecto actual
 python manage.py makemigrations
 python manage.py migrate
 ./manage.py shell < llenarBaseDatos.py # llenar base de datos
+deactivate

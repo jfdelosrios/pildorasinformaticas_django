@@ -52,11 +52,3 @@ Articulos.objects.create(
     seccion='jugueteria',
     precio=135
     )
-
-#-------------------------------------------------------------
-
-#crear usuarios
-from django.contrib.auth.models import User
-
-User.objects.create_superuser('juand', 'cursos@pildorasinformaticas.es', '123456')
-User.objects.create_user(username='juan2', password='123456789')

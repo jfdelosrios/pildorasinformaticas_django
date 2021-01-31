@@ -24,4 +24,4 @@ def blog(request):
 
 def contacto(request):
 
-    return render(request,'ProyectoWeb/contacto.html')
+    return render(request,'ProyectoWebApp/contacto.html')

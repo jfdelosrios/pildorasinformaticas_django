@@ -3,9 +3,9 @@ from django.db import models
 # Create your models here.
 
 class Servicio(models.Model):
-    Titulo=models.CharField(max_length=50)
+    titulo=models.CharField(max_length=50)
     contenido=models.CharField(max_length=50)
-    imagen=models.ImageField()
+    imagen=models.ImageField(upload_to='servicios')
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now_add=True)
 

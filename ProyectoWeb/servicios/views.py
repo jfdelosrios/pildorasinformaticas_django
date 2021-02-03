@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from servicios.models import Servicio
+from .models import Servicio
 
 def servicios(request):
 

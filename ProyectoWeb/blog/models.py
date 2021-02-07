@@ -22,7 +22,7 @@ class Post(models.Model):
     contenido=models.CharField(max_length=50)
     imagen=models.ImageField(upload_to='blog', null=True, blank=True)
     autor=models.ForeignKey(User, on_delete=models.CASCADE)
-    Categorias=models.ManyToManyField(Categoria)
+    categorias=models.ManyToManyField(Categoria)
     created=models.DateTimeField(auto_now_add=True)
     updated=models.DateTimeField(auto_now_add=True)
 

@@ -11,4 +11,9 @@ python manage.py migrate
 ./manage.py shell < video17.py
 ./manage.py shell < video19.py
 ./manage.py shell < video20.py
+
+#./manage.py shell < video34.py
+
 deactivate
+
+#se ejecuta con ./script.sh
